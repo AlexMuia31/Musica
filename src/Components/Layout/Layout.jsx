@@ -1,16 +1,26 @@
-import { Toolbar } from "@mui/material";
+import { Box, CssBaseline, Toolbar } from "@mui/material";
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <div>
-        <Navbar />
-        <Toolbar />
-      </div>
-      <div>{children}</div>
-    </div>
+    <Box sx={{ display: "flex" }}>
+      <CssBaseline />
+      <Navbar />
+
+      <Box
+        component="main"
+        sx={{
+          flexGrow: 1,
+          p: 3,
+          pt: 10,
+          background: "#1D2123",
+          minHeight: "100vh",
+        }}
+      >
+        {children}
+      </Box>
+    </Box>
   );
 };
 

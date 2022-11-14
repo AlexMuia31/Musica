@@ -12,6 +12,7 @@ import home from "../../Assets/home.svg";
 import music from "../../Assets/music.svg";
 import radio from "../../Assets/radio.svg";
 import video from "../../Assets/video.svg";
+import frame from "../../Assets/frame.svg";
 
 const drawerWidth = 240;
 
@@ -67,6 +68,7 @@ const Navdrawer = ({ open, setOpen }) => {
         "	.MuiDrawer-paper": {
           background: "#1D2123",
         },
+        display: { xs: "none", md: "block" },
       }}
     >
       <List sx={{ mt: "96px" }}>
@@ -133,7 +135,7 @@ const Navdrawer = ({ open, setOpen }) => {
                 justifyContent: "center",
               }}
             >
-              <img src={radio} alt="" />
+              <img src={radio} alt="" width="22px" height="22px" />
             </ListItemIcon>
             <ListItemText
               sx={{ opacity: open ? 1 : 0, color: "#fff", fontWeight: 700 }}
@@ -157,12 +159,36 @@ const Navdrawer = ({ open, setOpen }) => {
                 justifyContent: "center",
               }}
             >
-              <img src={video} alt="" />
+              <img src={video} alt="" width="22px" height="22px" />
             </ListItemIcon>
             <ListItemText
               sx={{ opacity: open ? 1 : 0, color: "#fff", fontWeight: 700 }}
             >
               Music Videos
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItemButton
+            sx={{
+              minHeight: 48,
+              justifyContent: open ? "initial" : "center",
+              px: 2.5,
+            }}
+          >
+            <ListItemIcon
+              sx={{
+                minWidth: 0,
+                mr: open ? 3 : "auto",
+                justifyContent: "center",
+              }}
+            >
+              <img src={frame} alt="" width="22px" height="22px" />
+            </ListItemIcon>
+            <ListItemText
+              sx={{ opacity: open ? 1 : 0, color: "#fff", fontWeight: 700 }}
+            >
+              Profile
             </ListItemText>
           </ListItemButton>
         </ListItem>

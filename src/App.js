@@ -1,3 +1,4 @@
+import { Box, CssBaseline } from "@mui/material";
 import { Layout, LandingPage } from "./Components";
 
 function App() {

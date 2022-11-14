@@ -42,6 +42,7 @@ const Navbar = () => {
                 aria-label="open drawer"
                 onClick={handleDrawerOpen}
                 edge="start"
+                sx={{ display: { xs: "none", md: "block" } }}
               >
                 <MenuIcon />
               </IconButton>
