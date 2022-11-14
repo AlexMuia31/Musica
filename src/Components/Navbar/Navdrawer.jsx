@@ -7,7 +7,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import { styled, useTheme } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import home from "../../Assets/home.svg";
 import music from "../../Assets/music.svg";
 import radio from "../../Assets/radio.svg";
@@ -55,11 +55,6 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 const Navdrawer = ({ open, setOpen }) => {
-  const theme = useTheme();
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
   return (
     <Drawer
       variant="permanent"
@@ -72,7 +67,13 @@ const Navdrawer = ({ open, setOpen }) => {
       }}
     >
       <List sx={{ mt: "96px" }}>
-        <ListItem disablePadding sx={{ display: "block" }}>
+        <ListItem
+          disablePadding
+          sx={{
+            display: "block",
+            ".MuiList-root": { backgroundColor: "#1A1E1F !important" },
+          }}
+        >
           <ListItemButton
             sx={{
               minHeight: 48,
