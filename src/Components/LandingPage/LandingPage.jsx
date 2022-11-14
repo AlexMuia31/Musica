@@ -1,9 +1,20 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Grid,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemIcon,
+  ListItemText,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import artist from "../../Assets/artist.svg";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import rectangle from "../../Assets/Rectangle17.svg";
 
 const LandingPage = () => {
   return (
@@ -122,15 +133,51 @@ const LandingPage = () => {
           >
             Top charts
           </Typography>
-          <Stack>
+          <Stack sx={{ mt: "14px" }}>
             <Box
               sx={{
                 background: "#1A1E1F",
                 height: { xs: "233px", md: "96px" },
                 width: { md: "auto", xs: "323px" },
                 borderRadius: "20px",
+                padding: "",
               }}
-            ></Box>
+            >
+              <Grid container gap={2}>
+                <Grid item md={8} xs={12}>
+                  <Grid container gap={1}>
+                    <List>
+                      <ListItem alignItems="center">
+                        <ListItemAvatar>
+                          <Avatar
+                            src={rectangle}
+                            variant="square"
+                            sx={{
+                              width: "63px",
+                              height: "63px",
+                              mr: "14px",
+                            }}
+                          />
+                        </ListItemAvatar>
+                        <ListItemText
+                          primary={
+                            <Typography color="#fff">
+                              Golden age of 80s
+                            </Typography>
+                          }
+                          secondary={
+                            <Box>
+                              <Typography color="#fff">Sean swadder</Typography>
+                              <Typography color="#fff">2:34:45</Typography>
+                            </Box>
+                          }
+                        />
+                      </ListItem>
+                    </List>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Box>
           </Stack>
         </Grid>
       </Grid>
