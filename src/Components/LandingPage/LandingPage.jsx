@@ -141,6 +141,8 @@ const LandingPage = () => {
                 width: { md: "auto", xs: "323px" },
                 borderRadius: "20px",
                 padding: "",
+                display: "flex",
+                alignItems: "center",
               }}
             >
               <Grid container gap={2}>
