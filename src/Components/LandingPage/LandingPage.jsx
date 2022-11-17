@@ -1,6 +1,7 @@
 import {
   Box,
   Grid,
+  IconButton,
   List,
   ListItem,
   ListItemAvatar,
@@ -13,9 +14,11 @@ import artist from "../../Assets/artist.svg";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import rectangle from "../../Assets/Rectangle17.svg";
 import vector from "../../Assets/Vector.svg";
 import vector2 from "../../Assets/Vector2.svg";
+import release1 from "../../Assets/release1.png";
 
 const LandingPage = () => {
   return (
@@ -166,7 +169,7 @@ const LandingPage = () => {
           >
             Top charts
           </Typography>
-          <Stack sx={{ mt: "14px" }}>
+          <Stack sx={{}}>
             <Box
               sx={{
                 background: "#1A1E1F",
@@ -176,47 +179,787 @@ const LandingPage = () => {
                 padding: "",
                 display: "flex",
                 alignItems: "center",
+                mt: "14px",
               }}
             >
               <Grid container gap={2}>
-                <Grid item md={8} xs={12}>
-                  <Grid container gap={1}>
-                    <List>
-                      <ListItem alignItems="center">
-                        <ListItemAvatar>
-                          <Avatar
-                            src={rectangle}
-                            variant="square"
-                            sx={{
-                              width: "63px",
-                              height: "63px",
-                              mr: "14px",
-                            }}
-                          />
-                        </ListItemAvatar>
-                        <ListItemText
-                          primary={
+                <Grid item md={8}>
+                  <List>
+                    <ListItem alignItems="center">
+                      <ListItemAvatar>
+                        <Avatar
+                          src={rectangle}
+                          variant="square"
+                          sx={{
+                            width: "63px",
+                            height: "63px",
+                            mr: "14px",
+                          }}
+                        />
+                      </ListItemAvatar>
+                      <ListItemText
+                        primary={
+                          <Typography
+                            color="#fff"
+                            fontSize="17px"
+                            fontWeight={400}
+                            fontFamily="quicksand"
+                            sx={{ whiteSpace: "nowrap" }}
+                          >
+                            Golden age of 80s
+                          </Typography>
+                        }
+                        secondary={
+                          <Box>
                             <Typography
                               color="#fff"
-                              sx={{ whiteSpace: "nowrap" }}
+                              fontSize="12px"
+                              fontWeight={400}
                             >
-                              Golden age of 80s
+                              Sean swadder
                             </Typography>
-                          }
-                          secondary={
-                            <Box>
-                              <Typography color="#fff">Sean swadder</Typography>
-                              <Typography color="#fff">2:34:45</Typography>
-                            </Box>
-                          }
+                            <Typography
+                              color="#fff"
+                              fontWeight={400}
+                              fontSize="12px"
+                            >
+                              2:34:45
+                            </Typography>
+                          </Box>
+                        }
+                      />
+                    </ListItem>
+                  </List>
+                </Grid>
+                <Grid
+                  item
+                  sm={6}
+                  md={3}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "flex-end",
+                  }}
+                >
+                  <IconButton
+                    sx={{ border: " 1px solid rgba(255, 255, 255, 0.11)" }}
+                  >
+                    <FavoriteBorderIcon />
+                  </IconButton>
+                </Grid>
+              </Grid>
+            </Box>
+            <Box
+              sx={{
+                background: "#1A1E1F",
+                height: { xs: "96px" },
+                width: { xs: "auto" },
+                borderRadius: "20px",
+                padding: "",
+                display: "flex",
+                alignItems: "center",
+                mt: "14px",
+              }}
+            >
+              <Grid container gap={2}>
+                <Grid item md={8}>
+                  <List>
+                    <ListItem alignItems="center">
+                      <ListItemAvatar>
+                        <Avatar
+                          src={rectangle}
+                          variant="square"
+                          sx={{
+                            width: "63px",
+                            height: "63px",
+                            mr: "14px",
+                          }}
                         />
-                      </ListItem>
-                    </List>
-                  </Grid>
+                      </ListItemAvatar>
+                      <ListItemText
+                        primary={
+                          <Typography
+                            color="#fff"
+                            fontSize="17px"
+                            fontWeight={400}
+                            fontFamily="quicksand"
+                            sx={{ whiteSpace: "nowrap" }}
+                          >
+                            Golden age of 80s
+                          </Typography>
+                        }
+                        secondary={
+                          <Box>
+                            <Typography
+                              color="#fff"
+                              fontSize="12px"
+                              fontWeight={400}
+                            >
+                              Sean swadder
+                            </Typography>
+                            <Typography
+                              color="#fff"
+                              fontWeight={400}
+                              fontSize="12px"
+                            >
+                              2:34:45
+                            </Typography>
+                          </Box>
+                        }
+                      />
+                    </ListItem>
+                  </List>
+                </Grid>
+                <Grid
+                  item
+                  sm={6}
+                  md={3}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "flex-end",
+                  }}
+                >
+                  <IconButton
+                    sx={{ border: " 1px solid rgba(255, 255, 255, 0.11)" }}
+                  >
+                    <FavoriteBorderIcon />
+                  </IconButton>
+                </Grid>
+              </Grid>
+            </Box>
+            <Box
+              sx={{
+                background: "#1A1E1F",
+                height: { xs: "96px" },
+                width: { xs: "auto" },
+                borderRadius: "20px",
+                padding: "",
+                display: "flex",
+                alignItems: "center",
+                mt: "14px",
+              }}
+            >
+              <Grid container gap={2}>
+                <Grid item md={8}>
+                  <List>
+                    <ListItem alignItems="center">
+                      <ListItemAvatar>
+                        <Avatar
+                          src={rectangle}
+                          variant="square"
+                          sx={{
+                            width: "63px",
+                            height: "63px",
+                            mr: "14px",
+                          }}
+                        />
+                      </ListItemAvatar>
+                      <ListItemText
+                        primary={
+                          <Typography
+                            color="#fff"
+                            fontSize="17px"
+                            fontWeight={400}
+                            fontFamily="quicksand"
+                            sx={{ whiteSpace: "nowrap" }}
+                          >
+                            Golden age of 80s
+                          </Typography>
+                        }
+                        secondary={
+                          <Box>
+                            <Typography
+                              color="#fff"
+                              fontSize="12px"
+                              fontWeight={400}
+                            >
+                              Sean swadder
+                            </Typography>
+                            <Typography
+                              color="#fff"
+                              fontWeight={400}
+                              fontSize="12px"
+                            >
+                              2:34:45
+                            </Typography>
+                          </Box>
+                        }
+                      />
+                    </ListItem>
+                  </List>
+                </Grid>
+                <Grid
+                  item
+                  sm={6}
+                  md={3}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "flex-end",
+                  }}
+                >
+                  <IconButton
+                    sx={{ border: " 1px solid rgba(255, 255, 255, 0.11)" }}
+                  >
+                    <FavoriteBorderIcon />
+                  </IconButton>
                 </Grid>
               </Grid>
             </Box>
           </Stack>
+        </Grid>
+      </Grid>
+
+      <Typography
+        color="#fff"
+        mt="40px"
+        fontFamily="quicksand"
+        fontWeight={700}
+        fontSize={{ xs: "20px", md: "29px" }}
+      >
+        New releases.
+      </Typography>
+      <Grid container gap={2}>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>{" "}
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>{" "}
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>{" "}
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>{" "}
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
+        </Grid>{" "}
+        <Grid item>
+          <Box
+            sx={{
+              width: "153px",
+              height: "193px",
+              top: "1px",
+              color: "#fff",
+            }}
+          >
+            <img
+              src={release1}
+              alt=""
+              style={{
+                width: "153px",
+                height: "153px",
+                borderRadius: "25px",
+              }}
+            />
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              life in a bubble
+            </Typography>
+            <Typography
+              fontSize="12px"
+              lineHeight="15px"
+              fontWeight={400}
+              fontFamily="quicksand"
+            >
+              The van
+            </Typography>
+          </Box>
         </Grid>
       </Grid>
     </Box>
