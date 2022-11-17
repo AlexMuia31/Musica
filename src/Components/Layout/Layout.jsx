@@ -1,5 +1,6 @@
-import { Box, CssBaseline, Toolbar } from "@mui/material";
+import { Box, CssBaseline } from "@mui/material";
 import React from "react";
+import BottomNav from "../Navbar/BottomNav";
 import Navbar from "../Navbar/Navbar";
 
 const Layout = ({ children }) => {
@@ -7,7 +8,7 @@ const Layout = ({ children }) => {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <Navbar />
-
+      <BottomNav />
       <Box
         component="main"
         sx={{
