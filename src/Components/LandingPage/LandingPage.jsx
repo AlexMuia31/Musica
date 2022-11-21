@@ -22,7 +22,7 @@ import release1 from "../../Assets/release1.png";
 
 const LandingPage = () => {
   return (
-    <Box sx={{}}>
+    <Box sx={{ overflowY: "hidden" }}>
       <Grid container gap={4}>
         <Grid
           item
@@ -420,6 +420,7 @@ const LandingPage = () => {
       >
         New releases.
       </Typography>
+
       <Grid container gap={2}>
         <Grid item>
           <Box

@@ -12,7 +12,7 @@ const BottomNav = () => {
         left: 0,
         right: 0,
         background: "transparent",
-        zIndex: 10,
+        zIndex: (theme) => theme.zIndex.drawer + 1,
         height: "100px",
       }}
       elevation={3}
@@ -23,6 +23,8 @@ const BottomNav = () => {
           background: "rgba(51, 55, 59, 0.37)",
           backdropFilter: "blur(5px)",
           height: "100px",
+          display: "flex",
+          alignItems: "center",
         }}
       >
         <Typography>
